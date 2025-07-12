@@ -1,0 +1,628 @@
+/*[VIEWERS]DO NOT MODIFIY COPY RAW FILE FOR NEED TO MODIFY*/
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Header */
+.heading {
+    box-shadow: 0 0 10px 2.5px gray;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    background-image: linear-gradient( 86.9deg,  rgba(253,189,38,1) 28.3%, rgba(253,109,38,1) 118.2% );
+}
+
+.logo > h1:hover {
+    color: burlywood;
+    border-radius: 10px;
+}
+
+
+.logo {
+    padding: 2px;
+    border-radius: 10px;
+}
+
+
+.acc-logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
+    animation-name: descend;
+    animation-timing-function: linear;
+    animation-duration: 3.5s;
+    animation-iteration-count: 1;
+}
+
+/*Update panel*/
+/*
+.update-panel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 0.5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, white, beige);
+    box-shadow: 0 0 10px 2.5px gold;
+}
+
+
+.update-title {
+    text-align: center;
+    font-size: 15px;
+    color:  gold;
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.update-info {
+    font-weight: bold;
+    color: black;
+    margin-top: 5px;
+    font-weight: bold;
+}
+*/
+/*Start of Nav links*/
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0;
+    line-height: 35px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    background: linear-gradient(to right, #FBA1B7, lightblue) 1%;
+    padding: 3.5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 1px 0.5px white;
+    font-family: Franklin Lucida Console  sans-serif;
+    margin: 5px;
+}
+
+.nav-links > li > a:hover {
+    background: linear-gradient(to right, #B0EBB4, #A0DEFF);
+    box-shadow: 0px 0px 10px 2.5px #B0EBB4;
+}
+
+li > a:visited {
+    color: white;
+}
+
+/* slogan Section */
+.slogan {
+    background: url(/images/ceo-and-menu.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    color: black;
+    text-align: center;
+    padding: 15% 0;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 6px 2.5px gray;
+}
+
+.slogan-img {
+    width: auto;
+    min-width: 375px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2.5px #FFF2D7;
+}
+
+.slogan-content {
+    width: 50%;
+    height: 630px;
+    padding: 8%;
+    background: black;
+    font-size: 1em;
+    border-radius: 3px;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.slogan h2 {
+    font-size: 3em;
+    letter-spacing: 0.1rem;
+    font-family: Segoe Script;
+    background: linear-gradient(to right, #FBA1B7, lightblue) ;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.slogan p {
+    font-size: 1.8em;
+    margin-top: 40px;
+    line-height: 50px;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.slogan .btn {
+    padding: 10px 30px;
+    background: linear-gradient(to left, purple, lightblue) 1%;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    letter-spacing: 0.1rem;
+    line-height: 150px;
+    box-shadow: 0 0 10px 2px #E7FBE6;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #B0EBB4, #A0DEFF);
+}
+
+/* Menu Section */
+.menu {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.menu h2 {
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-items .item {
+    background: url(/images/coffee\ beans.jpg) no-repeat center center/cover;
+    padding: 20px;
+    border-radius: 10px;
+    width: auto;
+    margin: 10px;
+    box-shadow: 0 0 4px 2px white;
+    border: 2.5px solid black;
+    border-top-color: gold;
+    border-right-color: orange;
+    border-bottom-color: aquamarine;
+    border-left-color: #A0DEFF;
+    animation-name: descend;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+.menu-items .item h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.menu-items .item p {
+    font-size: 1.5em;
+    color: black;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.subtitle {
+    text-decoration: underline;
+    text-decoration-color: black;
+    background-image: linear-gradient( 91.7deg,  rgba(135,206,235,1) 7.3%, rgba(255,154,139,1) 40.3%, rgba(255,195,160,1) 57.9%, rgba(255,215,0,1) 93.5% );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.tax-memo {
+    font-size: 1.3em;
+    color: black;
+}
+
+#description {
+    color: black;
+}
+.prices {
+   font-weight: bold;
+   text-decoration-line: underline;
+   letter-spacing: 0.1rem;
+   background-color: white;
+   border-radius: 5px;
+   font-size: 0.8em;
+}
+
+.coffee-p {
+    line-height: 130px;
+    letter-spacing: 0.1rem;
+}
+
+.iced-beverages-p {
+    line-height: 50px;
+    letter-spacing: 0.1rem;
+}
+
+.flavors-p {
+    line-height: 38px;
+    letter-spacing: 0.1rem;
+
+}
+
+.lunchMenu-p {
+    line-height: 100px;
+    letter-spacing: 0.1rem;
+}
+
+.coldMenu-p {
+    line-height: 55px;
+    letter-spacing: 0.1rem;
+}
+
+.espresso-p {
+    line-height: 50px;
+    letter-spacing: 0.1rem;
+}
+
+.sugar-type {
+    color: black;
+    letter-spacing: 0.1rem;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+
+.coldMenu-p {
+    line-height: 30px;
+}
+
+#specialD-memo {
+    font-size: 1em;
+    font-weight: bold;
+    color: red;
+    letter-spacing: 0.1rem;
+}
+
+.specialD-title {
+    margin-top: 8px;
+    letter-spacing: 0.1rem;
+    line-height: 45px;
+}
+
+#description {
+    letter-spacing: 0.1rem;
+}
+
+#lunch-memo {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: red;
+}
+
+/*Catering section*/
+.catering-background {
+    text-align: center;
+    padding: 50px 0;
+    background: url(/images/Mom\ catering.jpg) no-repeat center center/cover;
+    box-shadow: 0 0 6px 2.5px gray;
+    height: 100vh;
+    width: 100%;
+}
+
+.pic-holder {
+    background: url(/images/Mom\ catering.jpg) no-repeat center center/cover;
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2.5px #B0EBB4;
+}
+
+.catering {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10% 0;
+    animation-name: descend;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+}
+
+.cater-subtitle {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    color: black;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.catering-card {
+    text-align: left;
+    background-image: linear-gradient( 109.6deg,  rgba(177,173,219,1) 11.2%, rgba(245,226,226,1) 91.1% );
+    border-radius: 10px;
+    box-shadow: 0 0 6px 2.5px #B0EBB4;
+    margin: 30px;
+    justify-content: auto;
+    flex-wrap: wrap;
+    padding: 0.5em;
+}
+
+.price-title {
+    line-height: 50px;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 0.1rem;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+.price-right {
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 10px;
+    float: right;
+    text-decoration: underline;
+    text-decoration-color: black;
+    letter-spacing: 0.1rem;
+}
+
+.cater-slogan-text {
+    line-height: 50px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: black;
+    font-family: Franklin Lucida Console  sans-serif;
+    font-size: 1.5em;
+}
+
+.cater-contact-text {
+    line-height: 100px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    color: black;
+    font-family: Franklin Lucida Console  sans-serif;
+    font-size: 1.5em;
+}
+
+
+.catering-title {
+    font-size: 2.5em;
+    font-family: Franklin Lucida Console  sans-serif;
+}
+
+hr {
+    border-color: purple;
+    height: 1px;
+}
+
+/*Review styling*/
+.review {
+    margin-top: 20px;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.review-title {
+    font-size: 2.7em;
+}
+
+.review-cards {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-img {
+    width: 50px;
+    height: 50px;
+}
+
+.review-card {
+    width: 350px;
+    height: auto;
+    background: linear-gradient( to bottom left, lightblue, purple);
+    padding: 6px;
+    border-radius: 10px;
+    border: 2.5px solid black;
+    place-content: center;
+}
+
+.review-card h3 {
+    font-size: 1.3em;
+}
+
+.review-card p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.review-card .source-from {
+    font-size: 1em;
+}
+/* Footer */
+footer {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-cards {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-card {
+    line-height: 30px;
+    letter-spacing: 0.1rem;
+    font-size: 1.5em;
+}
+
+.footer-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.footer-p {
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+.dev-socials {
+    color: orange;
+}
+
+.address a {
+    font-weight: bold;
+    color: orange;
+    font-size: 0.7em;
+}
+
+.hours-p {
+    color: black;
+    font-weight: bold;
+    font-size: 0.7em;
+}
+
+.footer-bottom-info {
+    text-align: center;
+    line-height: 30px;
+    justify-content: center;
+    background: linear-gradient(to right, #B0EBB4, #A0DEFF);
+
+}
+.footer-memo_title {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: black;
+}
+
+.footer-memo-p {
+    font-size: 1.1em;
+    color: black;
+}
+
+/*Animations*/
+@keyframes descend {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+@keyframes blink {
+    0% {opacity: 0.5;}
+    50% {opacity: 1; }
+    100% {opacity: 0;}
+}
+/*Media Response*/
+@media (max-width: 600px){
+   .acc-logo {
+    width: 120px;
+    height: 120px;
+   }
+   .nav-links {
+    display: block;
+    font-size: 0.7em;
+    margin: 0px;
+   }
+   .slogan-content h2  {
+    font-size: 3em;
+   }
+   .slogan-content p {
+    font-size: 1.5em;
+   }
+   .slogan-content .btn {
+    font-size: 1.3em;
+   }
+   .menu h2 {
+    font-size: 1.8em;
+   }
+   .item {
+    font-size: 0.8em;
+   }
+   .catering-title {
+    font-size: 1.7em;
+   }
+   .catering-card {
+    font-size: 0.5em;
+    width: auto;
+    height: auto;
+   }
+   .pic-holder {
+    width: 300px;
+    height: 200px;
+   }
+   .price-title {
+    font-size: 2em;
+   }
+   .price-right {
+    font-size: 0.9em;
+   }
+   .review-title {
+    font-size: 1.7em;
+   }
+   .review-card p {
+    font-size: 1em;
+   }
+   .footer-logo {
+    width: 100px;
+    height: 100px;
+   }
+   footer {
+    font-size: 1.2em;
+   }
+   .footer-cards {
+    display: block;
+   }
+   .footer-subtitle {
+    color:plum;
+   }
+   .footer-bottom-info {
+    font-size: 0.6em;
+   }
+}
+
+@media (min-width: 481px) and (max-width: 767px){}
+
+@media (min-width: 768px) and (max-width: 991px){}
+
