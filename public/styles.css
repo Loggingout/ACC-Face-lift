@@ -166,15 +166,6 @@ li > a:visited {
     font-weight: bold;
 }
 
-.slogan h2 {
-    font-size: 3em;
-    letter-spacing: 0.1rem;
-    font-family: Segoe Script;
-    background: linear-gradient(to right, orange, black) ;
-    -webkit-background-clip: text;
-    color: transparent;
-}
-
 .slogan p {
     font-size: 1.8em;
     margin-top: 40px;
@@ -483,6 +474,40 @@ hr {
 .review-card .source-from {
     font-size: 1em;
 }
+
+.google-review-btn {
+    background: linear-gradient(to right, #B0EBB4, #A0DEFF);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.yelp-review-btn {
+    background: linear-gradient(to right, #B0EBB4, #A0DEFF);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+.leave-review-slogan {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button > a {
+    text-decoration: none;
+    color: black;
+}
+
+button > a:visited {
+    color: purple;
+}
+
 /* Footer */
 
 .footer-background {
@@ -607,10 +632,6 @@ footer {
     width: auto;
     height: auto;
    }
-   .pic-holder {
-    width: 300px;
-    height: 200px;
-   }
    .price-title {
     font-size: 2em;
    }
@@ -634,11 +655,18 @@ footer {
     display: block;
    }
    .footer-subtitle {
-    color:#FBA1B7;
+    color:#A0DEFF;
    }
    .footer-bottom-info {
     font-size: 0.6em;
    }
+   .google-review-btn, .yelp-review-btn {
+    font-size: 0.8em;
+    padding: 5px 10px;
+   }
+   .leave-review-slogan {
+    font-size: 1.2em;
+    color: white;
 }
 
 @media (min-width: 481px) and (max-width: 767px){}
